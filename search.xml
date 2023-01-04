@@ -5,8 +5,8 @@
     
     <entry>
       <title>基于hexo+butterfly和Github pages博客</title>
-      <link href="/2023/01/03/2/"/>
-      <url>/2023/01/03/2/</url>
+      <link href="/archives/eeace1a8.html"/>
+      <url>/archives/eeace1a8.html</url>
       
         <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在众多的博客中，我选择了hexo，最大的优势就是可以结合GitHub page来搭建一个免费的个人博客系统，将文章都托管到GitHub上，在也不用担心服务器过期的问题了，而且可以自己买一个域名，解析了GitHub上就可以直接使域名访问了。</p><h1 id="文章模板"><a href="#文章模板" class="headerlink" title="文章模板"></a>文章模板</h1><p>很多小伙伴给自己个博客添加了很多其他的功能，但是每次写文章的时候都需要在文章的开头去写一遍，这简直就是重复造轮子。其实，你可以自己在scaffolds中去修改属于你自己的模板</p><h1 id="目录了解"><a href="#目录了解" class="headerlink" title="目录了解"></a>目录了解</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">hexo-install-directory</span><br><span class="line">├── CNAME</span><br><span class="line">├── _config.yml  //Hexo的配置文件，可以配置主题、语言等</span><br><span class="line">├── avatar.jpg</span><br><span class="line">├── db.json</span><br><span class="line">├── debug.log</span><br><span class="line">├── node_modules</span><br><span class="line">├── public     //执行hexo g命令后，生成的内容会在这里，包括所有的文章、页面、分类、tag等.</span><br><span class="line">├── scaffolds    //保存着默认模板，自定义模板就是修改该目录下的文件</span><br><span class="line">│   ├── draft.md //默认的草稿模板</span><br><span class="line">│   ├── page.md  //默认的页面模板</span><br><span class="line">│   └── post.md  //默认的文章模板</span><br><span class="line">├── source  //Hexo存放编辑页面的地方，可以使用vim或其他编辑器编辑这里的内容</span><br><span class="line">│   ├── 404.html //自定义404页面，可以使用腾讯公益404页面</span><br><span class="line">│   ├── Staticfile </span><br><span class="line">│   ├── _drafts  //存放所有的草稿文件的目录</span><br><span class="line">│   ├── _posts //存放所有的文章文件的目录，用的最多，比如执行hexo new  &quot;post_name&quot;之后，post_name这篇文章就存放在这个目录下</span><br><span class="line">│   ├── categories</span><br><span class="line">└── themes //Hexo的所有主题</span><br><span class="line">    ├── landscape //原始hexo主题</span><br><span class="line">    ├── butterfly     //这是我目前用的主题</span><br></pre></td></tr></table></figure>]]></content>
       
@@ -36,8 +36,8 @@
     
     <entry>
       <title>java+swing+mysql 实现简单的班级管理系统</title>
-      <link href="/2023/01/03/13/"/>
-      <url>/2023/01/03/13/</url>
+      <link href="/archives/4f6b19d6.html"/>
+      <url>/archives/4f6b19d6.html</url>
       
         <content type="html"><![CDATA[<p><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.11.28/1.png"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.11.28/2.png"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.11.28/3.png"></p><p>链接：<a href="https://pan.baidu.com/s/13S39GLMJHMpzySX5XB1mHQ">https://pan.baidu.com/s/13S39GLMJHMpzySX5XB1mHQ</a><br>提取码：n94a </p>]]></content>
       
@@ -63,8 +63,8 @@
     
     <entry>
       <title>总结2022年部分设计的学校宣传作品</title>
-      <link href="/2023/01/03/12/"/>
-      <url>/2023/01/03/12/</url>
+      <link href="/archives/586e1f4c.html"/>
+      <url>/archives/586e1f4c.html</url>
       
         <content type="html"><![CDATA[<p><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.11.17/1.jpg"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.11.17/2.jpg"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.11.17/3.jpg"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/1.png" alt="预览图"></p>]]></content>
       
@@ -88,8 +88,8 @@
     
     <entry>
       <title>学校活动作品 知识竞赛</title>
-      <link href="/2023/01/03/11/"/>
-      <url>/2023/01/03/11/</url>
+      <link href="/archives/99ea4e2d.html"/>
+      <url>/archives/99ea4e2d.html</url>
       
         <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019 Adobe Illustrator 2019<br>基础字体：字魂网 ai变形<br>素材来源：包图网<br>参考来源：包图网<br>内存总量：12GB<br>备份链接：链接：<a href="https://pan.baidu.com/s/1meR9TpGlYFXM_mFgx-J5pQ">https://pan.baidu.com/s/1meR9TpGlYFXM_mFgx-J5pQ</a><br>[login]提取码：zseh [&#x2F;login]<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/fenmian.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200150.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200226.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200245.png" alt="预览图"></p>]]></content>
       
@@ -115,8 +115,8 @@
     
     <entry>
       <title>ps中性灰光影过渡</title>
-      <link href="/2023/01/03/10/"/>
-      <url>/2023/01/03/10/</url>
+      <link href="/archives/48be17ad.html"/>
+      <url>/archives/48be17ad.html</url>
       
         <content type="html"><![CDATA[<blockquote><p>引用虎课网PS-杂志风商业人像快速调色修图详解<br>[课程学习][1]</p></blockquote><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>中性灰主要是光影过渡，可以让光的过渡自然 比如皮肤这种，可以变得更加通透</p><h2 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h2><ul><li>1.首先要对图片进行一个简单调整，课程中的的样片进行提亮</li><li>2.例如修补工具修补瑕疵 ，课程讲师的删除可以进行内容识别，而之后我用同样的操作出现bug、应该是ps的版本的不同。 </li><li>3.可以预见，修补工具的内容识别方便快捷 （编辑–内容识别填充）也可以实现</li><li>4.高低频搭配中性灰达到快速磨皮</li></ul><h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>中性灰需要大量的练习，后期学习后的心得会继续分享 由于没有截图，本篇文章先不加图片说明了。<br>  [1]: <a href="https://huke88.com/course/23790.html?ref-tags=0,0,0,0">https://huke88.com/course/23790.html?ref-tags=0%2C0%2C0%2C0</a></p>]]></content>
       
@@ -144,8 +144,8 @@
     
     <entry>
       <title>linux基础笔记总结</title>
-      <link href="/2023/01/03/9/"/>
-      <url>/2023/01/03/9/</url>
+      <link href="/archives/afec276c.html"/>
+      <url>/archives/afec276c.html</url>
       
         <content type="html"><![CDATA[<p>1.Linux最初是曲芬兰赫尔辛基技术大学计算机系学生linus Torvalds 开发出来<br>2.linux特点：抢占式多任务、多用户、设备无关性、开放性、可拓展性、可维护性与开放源代码、完善的网络功能、可靠的系统安全、良好的可移植性<br>3.linux和windows的多系统共存有多种实现方式<br>4.shell是一个命令语言解释器（√）<br>5.普通用户是$提示符 超级用户#提示符  ctrl+c结束命令运行<br>6.重启系统 输入reboot 或shutdown -r now<br>7.shell命令由命名名 选项和参数三部分<br> 命令名［选项］［参数］<br>8.目录的创建与删除命令<br>   mkdir ［选项］目录<br>9.改变工作目录命令cd<br>cd［目录］<br>10.显示路径的命令pwd<br>11.显示目录内容命令ls<br>ls［选项］［文件｜目录］<br>12.more［选项］文件名 功能：分屏显示文件的内容<br>13.head命令 head［选项］文件名<br>-n 指出显示文件的前n行 如果没有给出n值，默认设置为10<br>14.tail命令 tail［选项］文件名<br>显示文件的尾部 +n 从第n行以后开始显示<br>15.文件内容查询命令grep<br>grep［选项］［查找模式］［文件名1］［文件名2］<br>16.文件内容统计命令wc<br>wc［选项］文件名 功能统计给定文件中的字节数-c，字数-w，行数-l<br>17.文件的复制移动删除命令（目录）<br>cp［选项］源文件 目标文件<br>mv［选项］源文件 目标文件<br>rm［选项］文件或目录<br>18.查看手册命令man<br>man 命令名<br>19.清屏命令clear<br>20.自动补齐命令 利用tab健<br>21.别名命令<br>alias［别名&#x3D;’标准shell命令行’］<br>查看当前可使用的别名命令［root@localhost～］#alias<br>［root@localhost～］#alias pd &#x3D; ‘vim&#x2F;etc&#x2F;passwd’<br>22.*通配符 可以匹配任意数目的字符<br>［root@localhost～］#ls f?   f开头两个字符<br>… 通配符表示可以匹配括号中给出的字符或字符范围<br>23.\d 任意一个数字 0～9<br>      \w 任意一个字母或数字或下画线<br>      \s 包括空格 制表符 换页符等空白字符中任意一个<br>. 代表任意字符<br>24.输出重定向 输出ls ＞info<br>    cat  info<br>25.创建文本文件 cat＞文件名 按住ctrl+d结束<br>合并文本文件 cat 文件列表 ＞文件名  将文件列表中的所有文件内容合并到指定的新文件中<br>26.管道 管道可以将第一个命令的输出通过管道传给第2个命令，作为第2个命令的输入，第2个命令的输出通过管道传给第3个命令，作为第3个命令的输入，以此类推，最后一个命令输出才会显示在屏幕上，管道所使用的符号是｜<br>27.vim有3种工作模式  命令模式 插入模式 末行模式<br>28.vim情况下删除文本命令<br>      dd 删除光标所在的当前一行<br>     #dd  删除#行  ，4dd 以及光标下面的3行<br>29.yy 复制光标所在行到缓存区<br>     p将缓冲区右侧 下一行<br>     P将缓冲区左侧  上一行<br>30.启动与退出vim<br>      wq 保存退出<br>       q！ 不保存退出<br>31.进入vim文件名 命令模式 zz退出<br>    按住i a o insert键进入插入模式 esc退出<br>    按:键进入末行模式 esc退出<br>32.cat &#x2F;etc&#x2F;passwd一行有7个域 （:）分隔<br>student:x:1000:1000:student:&#x2F;home&#x2F;student:&#x2F;bin&#x2F;bash<br>用户名&#x2F;口令&#x2F;uid&#x2F;gid&#x2F;用户名全称&#x2F;用户的登录目录所在位置&#x2F;用户所用shell的类型<br>33.cat &#x2F;etc&#x2F;shadow 文件等内容包括用户，被加密的密码，等其余信息<br>34.新建用户 user1<br>［root@localhost～］#useradd user1<br>增加用户user1，附属组设置为root组<br>［root@localhost～］#useradd -G root user1<br>35.删除用户账号user1及其主目录<br>［root@localhost～］#userdel - r user1<br>36.组账号文件 &#x2F;etc&#x2F;group<br>用户名:passwd:GID:用户列表<br>37.IDE硬盘 &#x2F;dev&#x2F;hdxx<br>例如&#x2F;dev&#x2F;hda  第二个&#x2F;dev&#x2F;hdb<br>38.主分区 扩展分区 逻辑分区<br>39.目录文件中的每一个目录由一个i节点来描述，i节点中文件类型标识是一个目录文件<br>设备文件都存储在&#x2F;dev&#x2F;下<br>40.&#x2F;bin存储基本的二进制程序文件，这里的命令都是开机时所必备的 在centos7中 这个目录是&#x2F;user&#x2F;bin目录的软链接<br>&#x2F;boot 存储系统启动所需文件，包括系统内核<br>&#x2F;dev device的缩写，存储Linux所有的外围设备<br>&#x2F;etc 该目录下存储着系统启动和运动所需的配置文件和脚本文件，各种应用程序的配置文件和脚本文件<br>41.ping命令<br>ping［选项］ip地址｜主机名<br>功能:主要用于测试本机与网络上另一台计算机的网络连接是否正确<br>［root@localhost～］# ping 172.16.101.9<br>42.禁用和启用网卡<br>ifconfig网卡名称 down<br>ifconfig网卡名称up<br>43.内核不同，Linux 操作系统使用Linux内核，Windows操作系统使用NT内核; Linux 内核代码开源，NT内核代码闭源，也就是说任何人都可以拿着Linux内核代码改成自己喜欢的风格来用，不过前提是你得是技术大牛+<br>Windows软件支持丰富，而Linux软件支持就很少了，因为Windows硬件驱动厂商支持全面，Linux驱动这块不如Windows全面，比如百分之九十九的游戏都可以在Windows.上。运行，而Linux上只有很简陋的游戏。4<br>Linux是免费的，Windows 是收费的，不过不代表所有Linux都是免费的，有一部分进行商+业运作的Linux是收费的，比如Redhat Linux。+<br>Windows易用性高，Linux 操作系统有一定的门槛，Linux 使用命令行字符模式为主要操作方式，Windows使用窗口、图标、鼠标点击形象化的方式为主要操作方式，如果不懂命令行，基本使用Linux是寸步难行的。+<br>市场和安全性，Linux 市场主攻服务器市场. Windows系统主打桌面市场，Linux 主要应用于网络，而Windows操作系统最开始应用于打印服务。Linux 安全性比Windows安全性高，要求它更加可靠。+</p>]]></content>
       
@@ -171,8 +171,8 @@
     
     <entry>
       <title>学校活动作品 妈妈的味道</title>
-      <link href="/2023/01/03/8/"/>
-      <url>/2023/01/03/8/</url>
+      <link href="/archives/c9b34690.html"/>
+      <url>/archives/c9b34690.html</url>
       
         <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019<br>基础字体：字魂网<br>素材来源：千库网<br>参考来源：千图网 包图网<br>内存总量：10GB<br>备份链接：<a href="https://pan.baidu.com/s/1Dl-wGEKYjm-IyD9ekVr08g">https://pan.baidu.com/s/1Dl-wGEKYjm-IyD9ekVr08g</a><br>[login]提取码：cxva[&#x2F;login]<br>以下为预览图<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/2.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/3.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/4.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/5.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/6.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/7.png" alt="预览图"></p>]]></content>
       
@@ -200,8 +200,8 @@
     
     <entry>
       <title>学校活动作品 三长训练营</title>
-      <link href="/2023/01/03/7/"/>
-      <url>/2023/01/03/7/</url>
+      <link href="/archives/11728864.html"/>
+      <url>/archives/11728864.html</url>
       
         <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019<br>基础字体：字魂网<br>素材来源：包图网<br>内存总量：600MB<br>备份链接：链接：<a href="https://pan.baidu.com/s/1PLJAU_hKHI_mfFAVK8_Oyg">https://pan.baidu.com/s/1PLJAU_hKHI_mfFAVK8_Oyg</a><br>[login]提取码：5vdl [&#x2F;login]<br>预览 <img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/%E4%B8%89%E9%95%BF%E8%AE%AD%E7%BB%83%E8%90%A5%20%E7%94%B5%E8%A7%86%E5%B1%8F%20100x56.jpg" alt="预览图"></p>]]></content>
       
@@ -229,8 +229,8 @@
     
     <entry>
       <title>2021大学生计算机设计大赛作品</title>
-      <link href="/2023/01/03/6/"/>
-      <url>/2023/01/03/6/</url>
+      <link href="/archives/6bb180e7.html"/>
+      <url>/archives/6bb180e7.html</url>
       
         <content type="html"><![CDATA[<h1 id="感言"><a href="#感言" class="headerlink" title="感言"></a>感言</h1><p>关于这次比赛，让我对ps有了更加深刻的了解。</p><h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>软件使用：Adobe Photoshop CC 2019 Adobe Illustrator 2019<br>素材来源：千库网  包图网<br>内存总量：300MB<br>团队成员： 李烘光    高震铄   田志宇<br>所获奖项: 二等奖<br>证书编号：JSJDS202100462021041482000276807771<br>查询地址：<a href="https://2021.jsjds.com.cn/Index/main/certification-verification">https://2021.jsjds.com.cn/Index/main/certification-verification</a><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/qq_pic_merged_1635001077841.jpg" alt="证书"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/2021091617060939698.jpg" alt="证书"><br>备份链接：链接：<a href="https://pan.baidu.com/s/1K5ZadHp19rkpTZR3AXZ--A">https://pan.baidu.com/s/1K5ZadHp19rkpTZR3AXZ--A</a><br>[login]提取码：nytv  [&#x2F;login]</p><p>以下为预览图<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/0.png" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/1.jpg" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/2.jpg" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/3.jpg" alt="预览"></p>]]></content>
       
@@ -244,9 +244,9 @@
       
         <tags>
             
-            <tag> PS </tag>
-            
             <tag> 平面设计 </tag>
+            
+            <tag> PS </tag>
             
             <tag> 作品 </tag>
             
@@ -260,8 +260,8 @@
     
     <entry>
       <title>腾讯QQ头像获取直链（多方法整理）</title>
-      <link href="/2023/01/03/5/"/>
-      <url>/2023/01/03/5/</url>
+      <link href="/archives/2af2cf76.html"/>
+      <url>/archives/2af2cf76.html</url>
       
         <content type="html"><![CDATA[<p>【腾讯QQ头像获取直链】用别人提供的不如用官方的</p><p>1.API接口（qq号式）：<a href="https://q1.qlogo.cn/g?b=qq&nk=QQ%E5%8F%B7%E7%A0%81&s=640">https://q1.qlogo.cn/g?b=qq&amp;nk=QQ号码&amp;s=640</a></p><p>不想用ssl，请把s去掉。</p><p>640是大小，可以是640,100</p><p>2.API接口（邮箱式）： <a href="https://q2.qlogo.cn/headimg_dl?dst_uin=QQ%E9%82%AE%E7%AE%B1&spec=640">https://q2.qlogo.cn/headimg_dl?dst_uin=QQ邮箱&amp;spec=640</a>  亲测100也有效</p><p>3.API接口（来自QQ空间）：<a href="https://qlogo.store.qq.com/qzone/QQ%E5%8F%B7/QQ%E5%8F%B7/%E5%A4%A7%E5%B0%8F">https://qlogo.store.qq.com/qzone/QQ号/QQ号/大小</a> 同时它的地址前缀可以换成qlogo1、qlogo2、qlogo3、qlogo4哦，其实都一样的。  640,100都行</p><p>还可以利用api接口地址获取你的QQ空间头像地址：<a href="http://users.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=1176996982">http://users.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=1176996982</a> , 1176996982替换为你的QQ号，然后会返回一串json数据，里面的网址就是你的头像了。</p><p>再附一个https的QQ头像API接口：<a href="http://ptlogin2.qq.com/getface?appid=1006102&imgtype=3&uin=1176996982">http://ptlogin2.qq.com/getface?appid=1006102&amp;imgtype=3&amp;uin=1176996982</a> ，同样会返回json数据，然后自行提取你的专属头像网址。</p><p>本文来自 杂念 原文<a href="https://dyedd.cn/618.html">https://dyedd.cn/618.html</a></p>]]></content>
       
@@ -285,8 +285,8 @@
     
     <entry>
       <title>7-Zip是具有高压缩比的文件存档器</title>
-      <link href="/2023/01/03/4/"/>
-      <url>/2023/01/03/4/</url>
+      <link href="/archives/784fe0c6.html"/>
+      <url>/archives/784fe0c6.html</url>
       
         <content type="html"><![CDATA[<p>7-zip在其独创的压缩格式上还是比较有优势的，压缩率更高，安全性也不错。其软件在解码其他格式压缩包时效率也不错。不大不小的缺陷是界面比较丑；默认安装可能没有关联文件格式，要手动打开7-zip文件管理器，进入工具-首选项设置文件关联。7-zip另外一个问题就是其创建的压缩包为*.7z格式，有些老版本的其他解压软件可能无法读取。在制作压缩文件传给别人的时候不是很方便。如果没有特殊需求的话WinRAR、好压等软件还是不错的、更加大众化的选择。</p><h2 id="7-Zip-的主要功能"><a href="#7-Zip-的主要功能" class="headerlink" title="7-Zip 的主要功能"></a>7-Zip 的主要功能</h2><p>1.7z 格式的高压缩比与LZMA和LZMA2压缩<br>支持格式：<br>2.包装 &#x2F; 拆包： 7z， Xz， Bzip2， Gzip， Tar， 邮编和 WIM<br>仅拆包： AR， ARJ， CAB， CHM， CPIO， 克拉姆夫斯， DMG， EXT， 脂肪， GPT， HFS， IHEX， ISO， LZH， LZMA， MBR， MSI， NSIS， NTFS， QCOW2， RAR， RPM， 壁球， UDF， UEFI， VDI， VHD， VMDK， WIM， XAR 和 Z.<br>3.对于 ZIP 和 GZIP 格式，7-Zip提供的压缩比比 PKZip 和 WinZip 提供的压缩比高 2-10%<br>4.7z 和 ZIP 格式的强 AES-256 加密<br>5.7z 格式的自提取功能<br>6.与视窗壳集成<br>7.强大的文件管理器<br>8.强大的命令线版本<br>9.远经理的插件<br>87 种语言的本地化<br><img src="http://topsoft.news/wordpress/wp-content/uploads/2016/05/7-zip-app.png" alt="预览"></p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>[button color&#x3D;”light” icon&#x3D;”” url&#x3D;”<a href="https://www.7-zip.org/a/7z2103-x64.exe">https://www.7-zip.org/a/7z2103-x64.exe</a>“ type&#x3D;””]7-Zip 64 位 x64[&#x2F;button]<br>[button color&#x3D;”light” icon&#x3D;”” url&#x3D;”<a href="https://www.7-zip.org/a/7z2103.exe">https://www.7-zip.org/a/7z2103.exe</a>“ type&#x3D;””]7-Zip 32 位 x86[&#x2F;button]<br>更多了解请到官网 <a href="https://www.7-zip.org/">https://www.7-zip.org</a></p>]]></content>
       
@@ -310,8 +310,8 @@
     
     <entry>
       <title>提取网易云 cookie 方法</title>
-      <link href="/2023/01/03/1/"/>
-      <url>/2023/01/03/1/</url>
+      <link href="/archives/d247c262.html"/>
+      <url>/archives/d247c262.html</url>
       
         <content type="html"><![CDATA[<p>如果你是网易云会员可以将您的 cookie 填入此处来获取云盘等付费资源，听歌将不会计入下载次数。</p><p>内容来自<a href="https://github.com/mengkunsoft/MKOnlineMusicPlayer/wiki">https://github.com/mengkunsoft/MKOnlineMusicPlayer/wiki</a></p><p>由于网易云音乐多次封禁 Meting 所使用的 Cookie （具体表现为网易云音乐歌曲无法播放，播放列表仅剩一首歌）因此请自行获取 Cookie 并进行配置，以保障正常使用。方法如下：</p><p>1、浏览器 访问 <a href="http://music.163.com/">http://music.163.com/</a> 登录你的网易云</p><p>2、按下 F12（或 Ctrl+shift+i）打开浏览器控制台，切换到Network选项卡，点亮左侧这个小红点</p><p><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/7.27/1.jpg" alt="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/7.27/1.jpg"></p><p>3、刷新浏览器，等待页面再一次加载完毕</p><p>4、将下侧出现的列表拉到最顶上，找到 Name 为 music.163.com 的这一项，点进去</p><p>5、在 Headers 选项卡中往下拉，找到 Request Headers，选定并复制 Cookie： 后面的文字内容</p><p><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/7.27/2.jpg" alt="img"></p><p>6、填写到 Handsome 插件设置里面的「网易云 Cookie」设置项中</p><p>cookie 有一定的有效期，具体时间没有测试过，应该还挺长的，如果过期了，尝试再次登录按照上面操作一次。</p>]]></content>
       
@@ -335,8 +335,8 @@
     
     <entry>
       <title>应用腾讯cos总结及COSBrowser 工具</title>
-      <link href="/2023/01/02/3/"/>
-      <url>/2023/01/02/3/</url>
+      <link href="/archives/c5a2465c.html"/>
+      <url>/archives/c5a2465c.html</url>
       
         <content type="html"><![CDATA[<h2 id="什么是腾讯cos存储"><a href="#什么是腾讯cos存储" class="headerlink" title="什么是腾讯cos存储"></a>什么是腾讯cos存储</h2><p>对象存储（Cloud Object Storage，COS）是由腾讯云推出的无目录层次结构、无数据格式限制，可容纳海量数据且支持 HTTP&#x2F;HTTPS 协议访问的分布式存储服务。腾讯云 COS 的存储桶空间无容量上限，无需分区管理，适用于 CDN 数据分发、数据万象处理或大数据计算与分析的数据湖等多种场景。COS 提供网页端管理界面、多种主流开发语言的 SDK、API 以及命令行和图形化工具，并且兼容 S3 的 API 接口，方便用户直接使用社区工具和插件。<br>前面的话取自于官方</p><h2 id="用它可以干什么"><a href="#用它可以干什么" class="headerlink" title="用它可以干什么"></a>用它可以干什么</h2><p>1.cos最大特点在于存储大量的图片或数据<br>2.易于生成外联方便调用<br>3.搭配可视化的COSBrowser 工具完全可以当个人云盘使用（产生外网流量费用成本较高）<br>4.便宜<br>5.等待补充</p><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p>目前应用于博客的主要图片存储，节省服务器空间成本 </p><h2 id="为什么使用腾讯cos"><a href="#为什么使用腾讯cos" class="headerlink" title="为什么使用腾讯cos"></a>为什么使用腾讯cos</h2><p>他可以当成一个天然的图床使用 而且安全系数高 图片不容易丢失<br>如果将大量的图片存放在免费图床 代表着图床一旦关闭 图片外链会全部失效<br>（最昂贵的就是免费）<br>另外将图片部署在服务器也会影响页面等待加载速度 页面可能出现卡死 丢帧 反应速度慢。<br>使用外链大幅度提升页面响应速度</p><h2 id="COSBrowser"><a href="#COSBrowser" class="headerlink" title="COSBrowser"></a>COSBrowser</h2><p>COSBrowser 是腾讯云对象存储 COS 推出的可视化界面工具，让您可以使用更简单的交互轻松实现对 COS 资源的查看、传输和管理。目前 COSBrowser 有桌面端和移动端两种，详情可参见：</p><p><a href="https://cloud.tencent.com/document/product/436/38103">桌面端使用说明</a><br><a href="https://cloud.tencent.com/document/product/436/38105">移动端使用说明</a></p><h2 id="COSBrowser-工具下载"><a href="#COSBrowser-工具下载" class="headerlink" title="COSBrowser 工具下载"></a>COSBrowser 工具下载</h2><p>[tabs]<br>[tab name&#x3D;”桌面端” active&#x3D;”true”]<br><a href="https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-latest.exe"><strong>Windows</strong></a>Windows 7 32&#x2F;64位以上、Windows Server 2008 R2 64位以上<br><a href="https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-latest.dmg"><strong>macOS</strong></a>macOS 10.13以上<br><a href="https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-latest-linux.zip"><strong>Linux</strong></a>需带有图形界面并支持 AppImage 格式<br>注意：CentOS 启动客户端需在终端执行 .&#x2F;cosbrowser.AppImage –no-sandbox[&#x2F;tab]<br>[tab name&#x3D;”移动端”]<br><a href="https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-latest.apk"><strong>Android</strong></a>Android 4.4以上<br><a href="https://apps.apple.com/cn/app/id1469323992"><strong>iOS</strong></a>iOS 11以上<br>[&#x2F;tab]<br>[tab name&#x3D;”网页端”]<br><a href="https://cosbrowser.cloud.tencent.com/web"><strong>Web</strong></a>Chrome&#x2F;FireFox&#x2F;Safari&#x2F;IE10+等浏览器<br>[&#x2F;tab]<br>[&#x2F;tabs]</p>]]></content>
       
