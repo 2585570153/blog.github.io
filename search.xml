@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>关于hexo配置汇总</title>
+      <link href="/archives/1b4c065d.html"/>
+      <url>/archives/1b4c065d.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章主要记录一下我在使用hexo博客遇到的一些问题，以及一些常用的配置，都汇总到这篇文章，持续性更新，以便忘记的时候方便查找。</p><h1 id="分类名和标签名改成英文"><a href="#分类名和标签名改成英文" class="headerlink" title="分类名和标签名改成英文"></a>分类名和标签名改成英文</h1><div class="note orange no-icon flat"><p>一般hexo都是部署在GitHub上面，修不修改都无所谓，我的网站是在个人云服务器上部署，对于Nginx上不支持中文url，这就很难受，在查找资料的时候发现可以修改成英文，如下</p></div><p>分类名称默认是你在文章里面设置的，如果是中文分类名，那么路径名也是中文了，特别别扭。我在文档上查到了一个名为 category_map 的设置项，就是一个键值对嘛。<br>修改办法就是打开你的 Hexo 配置文件 <code>_config.yml</code>。<br>修改 <code>category_map</code> 属性和<code>tag_map</code>属性<br>大概按照这样的格式：</p><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">category<span class="emphasis">_map:</span></span><br><span class="line"><span class="emphasis">  &#x27;代码学习&#x27; : Codelearning</span></span><br><span class="line"><span class="emphasis">  &#x27;信息技术&#x27; : xingxijishu</span></span><br><span class="line"><span class="emphasis">  &#x27;平面设计&#x27; : plane</span></span><br><span class="line"><span class="emphasis">  &#x27;平面笔记&#x27; : planenote</span></span><br><span class="line"><span class="emphasis">  </span></span><br><span class="line"><span class="emphasis">tag_</span>map:</span><br><span class="line">  &#x27;平面设计&#x27; : plane</span><br><span class="line">  &#x27;博客&#x27; : blog</span><br><span class="line">  &#x27;腾讯cos&#x27; : cos</span><br><span class="line">  &#x27;API接口&#x27; : api</span><br></pre></td></tr></table></figure><p>这样重新生成的静态文件，就会将中文转换为英文，这样做可能有点麻烦，每次都需要修改一下，所以标签尽量使用英文。<br>修改前的url<br><a href="http://blog.aiheadn.cn/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/">http://blog.aiheadn.cn/categories/代码学习/</a><br>修改后的url<br><a href="http://blog.aiheadn.cn/categories/Codelearning/">http://blog.aiheadn.cn/categories/Codelearning/</a></p><h1 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h1><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --watch</span><br></pre></td></tr></table></figure><h1 id="持续更新"><a href="#持续更新" class="headerlink" title="持续更新"></a>持续更新</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> 代码学习 </category>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>linux环境安装nodejs和npm环境</title>
+      <link href="/archives/53576780.html"/>
+      <url>/archives/53576780.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>因为刚刚换上hexo的框架，想利用私有部署把Twikoo评论部署在博客上，所以需要使用liunx安装node.js,网络上对于安装linux的资料很少，在我查找了一些资料之后终于把环境配置好，但是因为执行条命令 <code>nohup tkserver &gt;&gt; tkserver.log 2&gt;&amp;1 &amp;</code>一直报错，思考一个下午之后，最后换了另外一个评论系统。</p><h1 id="安装npde-js"><a href="#安装npde-js" class="headerlink" title="安装npde.js"></a>安装npde.js</h1><p>第一步先安装nodejs<a href="https://nodejs.org/en/download/">nodejs官方网站</a><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2023.1.4/1.png" alt="1"><br>找到需要下载的版本号，右键复制出下载地址 <a href="https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz">https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz</a><br>利用Xshell连接你的服务器<br>首先应该先进入目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  /usr/local/</span><br></pre></td></tr></table></figure><p>新建一个nodejs的目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir nodejs</span><br></pre></td></tr></table></figure><p>6.cd到nodejs目录，用wget下载 这样就直接下载到你的目录里面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz</span><br></pre></td></tr></table></figure><p>tar xf 解压文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xf node-v10.15.0-linux-x64.tar.xz</span><br></pre></td></tr></table></figure><p>mv 重命名为node18  这个命名自己清楚就行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node-v10.15.0-linux-x64 nodejs18</span><br></pre></td></tr></table></figure><h1 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h1><p>ln -s设置node和npm软链接 （配置环境变量，这里的路径一定要自己清楚）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/nodejs/nodejs18/bin/node /usr/bin/node</span><br><span class="line">ln -s /usr/local/nodejs/nodejs18/bin/npm /usr/bin/npm</span><br></pre></td></tr></table></figure><blockquote><p>如果配置错了的话 可以使用覆盖命令 in -sf 强制创建软链接（覆盖以前的链接）</p></blockquote><p>输入node -v查看版本号</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><p>配置成功后应该显示的是node的版本号，如果提示乱码的话，一般是linux的内核和node冲突了，可以选择降底版本。</p><h1 id="安装cnpm"><a href="#安装cnpm" class="headerlink" title="安装cnpm"></a>安装cnpm</h1><h2 id="这个是我看其他资料，我没有测试，因为我觉得npm速度还是可以的"><a href="#这个是我看其他资料，我没有测试，因为我觉得npm速度还是可以的" class="headerlink" title="这个是我看其他资料，我没有测试，因为我觉得npm速度还是可以的"></a>这个是我看其他资料，我没有测试，因为我觉得npm速度还是可以的</h2><p>有时候用npm安装速度太慢，这时可以考虑安装cnpm</p><p>直接npm下载安装即可：</p><p>cd到&#x2F;usr&#x2F;local&#x2F;nodejs目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>创建软连接</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/nodejs/nodejs18/bin/cnpm /usr/bin/cnpm</span><br></pre></td></tr></table></figure><p>查看版本：cnpm -v</p><p>看到以下信息即为成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">cnpm@6.0.0 (/usr/lib/node_modules/cnpm/lib/parse_argv.js)</span><br><span class="line"></span><br><span class="line">npm@6.5.0 (/usr/lib/node_modules/cnpm/node_modules/npm/lib/npm.js)</span><br><span class="line"></span><br><span class="line">node@10.15.0 (/usr/local/nodejs/nodejs10/bin/node)</span><br><span class="line"></span><br><span class="line">npminstall@3.19.1 (/usr/lib/node_modules/cnpm/node_modules/npminstall/lib/index.js)</span><br><span class="line"></span><br><span class="line">prefix=/usr/local/nodejs/nodejs10</span><br><span class="line"></span><br><span class="line">linux x64 3.10.0-693.2.2.el7.x86_64</span><br><span class="line"></span><br><span class="line">registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 代码学习 </category>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> node </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于hexo+butterfly和Github pages博客</title>
       <link href="/archives/eeace1a8.html"/>
       <url>/archives/eeace1a8.html</url>
@@ -13,9 +71,7 @@
       
       <categories>
           
-          <category> 代码学习 </category>
-          
-          <category> hexo </category>
+          <category> https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2023.1.5/hexo.png - 代码学习 - hexo </category>
           
       </categories>
       
