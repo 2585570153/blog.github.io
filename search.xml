@@ -4,11 +4,40 @@
   
     
     <entry>
+      <title>一些常用的网站文档</title>
+      <link href="/archives/1d5436e1.html"/>
+      <url>/archives/1d5436e1.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>主要用来记录一些我经常使用的网站查询资料</p><h1 id="网站文档"><a href="#网站文档" class="headerlink" title="网站文档"></a>网站文档</h1><div class="note primary no-icon flat"><p>无涯教程：<a href="https://www.learnfk.com/">https://www.learnfk.com/</a></p></div><div class="note success no-icon flat"><p>butterfly主题的标签外挂： <a href="https://butterfly.js.org/posts/2df239ce/">https://butterfly.js.org/posts/2df239ce/</a></p></div><div class="note info no-icon flat"><p>有道翻译： <a href="https://fanyi.youdao.com/index.html#/">https://fanyi.youdao.com/index.html#/</a></p></div><div class="note warning no-icon flat"><p>markdown官方文档： <a href="https://markdown.com.cn/cheat-sheet.html">https://markdown.com.cn/cheat-sheet.html</a></p></div><div class="note danger no-icon flat"><p>图片在线压缩（以及站长功能）： <a href="https://www.bejson.com/ui/compress_img/">https://www.bejson.com/ui/compress_img/</a></p></div><div class="note primary no-icon flat"><p>文件格式转换：<a href="https://app.xunjiepdf.com/ppt2jpg/">https://app.xunjiepdf.com/ppt2jpg/</a></p></div><div class="note success no-icon flat"><p>哔哩哔哩视频下载： <a href="https://bilibili.iiilab.com/">https://bilibili.iiilab.com/</a></p></div><div class="note info no-icon flat"><p>网易见外工作台： <a href="https://jianwai.youdao.com/">https://jianwai.youdao.com/</a></p></div><div class="note warning no-icon flat"><p>油猴 Greasy Fork： <a href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 代码学习 </category>
+          
+          <category> 文档 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文档 </tag>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于hexo配置汇总</title>
       <link href="/archives/1b4c065d.html"/>
       <url>/archives/1b4c065d.html</url>
       
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章主要记录一下我在使用hexo博客遇到的一些问题，以及一些常用的配置，都汇总到这篇文章，持续性更新，以便忘记的时候方便查找。</p><h1 id="分类名和标签名改成英文"><a href="#分类名和标签名改成英文" class="headerlink" title="分类名和标签名改成英文"></a>分类名和标签名改成英文</h1><div class="note orange no-icon flat"><p>一般hexo都是部署在GitHub上面，修不修改都无所谓，我的网站是在个人云服务器上部署，对于Nginx上不支持中文url，这就很难受，在查找资料的时候发现可以修改成英文，如下</p></div><p>分类名称默认是你在文章里面设置的，如果是中文分类名，那么路径名也是中文了，特别别扭。我在文档上查到了一个名为 category_map 的设置项，就是一个键值对嘛。<br>修改办法就是打开你的 Hexo 配置文件 <code>_config.yml</code>。<br>修改 <code>category_map</code> 属性和<code>tag_map</code>属性<br>大概按照这样的格式：</p><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">category<span class="emphasis">_map:</span></span><br><span class="line"><span class="emphasis">  &#x27;代码学习&#x27; : Codelearning</span></span><br><span class="line"><span class="emphasis">  &#x27;信息技术&#x27; : xingxijishu</span></span><br><span class="line"><span class="emphasis">  &#x27;平面设计&#x27; : plane</span></span><br><span class="line"><span class="emphasis">  &#x27;平面笔记&#x27; : planenote</span></span><br><span class="line"><span class="emphasis">  </span></span><br><span class="line"><span class="emphasis">tag_</span>map:</span><br><span class="line">  &#x27;平面设计&#x27; : plane</span><br><span class="line">  &#x27;博客&#x27; : blog</span><br><span class="line">  &#x27;腾讯cos&#x27; : cos</span><br><span class="line">  &#x27;API接口&#x27; : api</span><br></pre></td></tr></table></figure><p>这样重新生成的静态文件，就会将中文转换为英文，这样做可能有点麻烦，每次都需要修改一下，所以标签尽量使用英文。<br>修改前的url<br><a href="http://blog.aiheadn.cn/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/">http://blog.aiheadn.cn/categories/代码学习/</a><br>修改后的url<br><a href="http://blog.aiheadn.cn/categories/Codelearning/">http://blog.aiheadn.cn/categories/Codelearning/</a></p><h1 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h1><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --watch</span><br></pre></td></tr></table></figure><h1 id="持续更新"><a href="#持续更新" class="headerlink" title="持续更新"></a>持续更新</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章主要记录一下我在使用hexo博客遇到的一些问题，以及一些常用的配置，都汇总到这篇文章，持续性更新，以便忘记的时候方便查找。</p><h1 id="分类名和标签名改成英文"><a href="#分类名和标签名改成英文" class="headerlink" title="分类名和标签名改成英文"></a>分类名和标签名改成英文</h1><div class="note orange no-icon flat"><p>一般hexo都是部署在GitHub上面，修不修改都无所谓，我的网站是在个人云服务器上部署，对于Nginx上不支持中文url，这就很难受，在查找资料的时候发现可以修改成英文，如下</p></div><p>分类名称默认是你在文章里面设置的，如果是中文分类名，那么路径名也是中文了，特别别扭。我在文档上查到了一个名为 category_map 的设置项，就是一个键值对嘛。<br>修改办法就是打开你的 Hexo 配置文件 <code>_config.yml</code>。<br>修改 <code>category_map</code> 属性和<code>tag_map</code>属性<br>大概按照这样的格式：</p><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">category<span class="emphasis">_map:</span></span><br><span class="line"><span class="emphasis">  &#x27;代码学习&#x27; : Codelearning</span></span><br><span class="line"><span class="emphasis">  &#x27;信息技术&#x27; : xingxijishu</span></span><br><span class="line"><span class="emphasis">  &#x27;平面设计&#x27; : plane</span></span><br><span class="line"><span class="emphasis">  &#x27;平面笔记&#x27; : planenote</span></span><br><span class="line"><span class="emphasis">  </span></span><br><span class="line"><span class="emphasis">tag_</span>map:</span><br><span class="line">  &#x27;平面设计&#x27; : plane</span><br><span class="line">  &#x27;博客&#x27; : blog</span><br><span class="line">  &#x27;腾讯cos&#x27; : cos</span><br><span class="line">  &#x27;API接口&#x27; : api</span><br></pre></td></tr></table></figure><p>这样重新生成的静态文件，就会将中文转换为英文，这样做可能有点麻烦，每次都需要修改一下，所以标签尽量使用英文。<br>修改前的url<br><a href="http://blog.aiheadn.cn/categories/%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/">http://blog.aiheadn.cn/categories/代码学习/</a><br>修改后的url<br><a href="http://blog.aiheadn.cn/categories/Codelearning/">http://blog.aiheadn.cn/categories/Codelearning/</a></p><h1 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h1><p>Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --watch</span><br></pre></td></tr></table></figure><h1 id="hexo-Butterfly主题文章置顶"><a href="#hexo-Butterfly主题文章置顶" class="headerlink" title="hexo Butterfly主题文章置顶"></a>hexo Butterfly主题文章置顶</h1><p>卸载hexo-generator-index，然后安装hexo-generator-index-pin-top</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>使用方法：<br>在需要置顶的文章的Front-matter中加上top: true&#x2F;数字即可，<br>数字越大，文章越靠前。<br>例如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cover: </span><br><span class="line">top: 1 #这里加一个top就行</span><br><span class="line">abbrlink: 1d5436e1</span><br><span class="line">date: 2023-01-06 17:32:05</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="持续更新"><a href="#持续更新" class="headerlink" title="持续更新"></a>持续更新</h1>]]></content>
       
       
       <categories>
@@ -71,7 +100,9 @@
       
       <categories>
           
-          <category> https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2023.1.5/hexo.png - 代码学习 - hexo </category>
+          <category> 代码学习 </category>
+          
+          <category> hexo </category>
           
       </categories>
       
@@ -147,7 +178,7 @@
       <link href="/archives/99ea4e2d.html"/>
       <url>/archives/99ea4e2d.html</url>
       
-        <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019 Adobe Illustrator 2019<br>基础字体：字魂网 ai变形<br>素材来源：包图网<br>参考来源：包图网<br>内存总量：12GB<br>备份链接：链接：<a href="https://pan.baidu.com/s/1meR9TpGlYFXM_mFgx-J5pQ">https://pan.baidu.com/s/1meR9TpGlYFXM_mFgx-J5pQ</a><br>[login]提取码：zseh [&#x2F;login]<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/fenmian.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200150.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200226.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200245.png" alt="预览图"></p>]]></content>
+        <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019 Adobe Illustrator 2019<br>基础字体：字魂网 ai变形<br>素材来源：包图网<br>参考来源：包图网<br>内存总量：12GB<br>备份链接：链接：<a href="https://pan.baidu.com/s/1meR9TpGlYFXM_mFgx-J5pQ">https://pan.baidu.com/s/1meR9TpGlYFXM_mFgx-J5pQ</a> </p><p><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/fenmian.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200150.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200226.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2022.01.19/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-19%20200245.png" alt="预览图"></p>]]></content>
       
       
       <categories>
@@ -230,7 +261,7 @@
       <link href="/archives/c9b34690.html"/>
       <url>/archives/c9b34690.html</url>
       
-        <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019<br>基础字体：字魂网<br>素材来源：千库网<br>参考来源：千图网 包图网<br>内存总量：10GB<br>备份链接：<a href="https://pan.baidu.com/s/1Dl-wGEKYjm-IyD9ekVr08g">https://pan.baidu.com/s/1Dl-wGEKYjm-IyD9ekVr08g</a><br>[login]提取码：cxva[&#x2F;login]<br>以下为预览图<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/2.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/3.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/4.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/5.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/6.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/7.png" alt="预览图"></p>]]></content>
+        <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019<br>基础字体：字魂网<br>素材来源：千库网<br>参考来源：千图网 包图网<br>内存总量：10GB<br>备份链接：<a href="https://pan.baidu.com/s/1Dl-wGEKYjm-IyD9ekVr08g">https://pan.baidu.com/s/1Dl-wGEKYjm-IyD9ekVr08g</a></p><p>以下为预览图<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/2.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/3.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/4.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/5.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/6.png" alt="预览图"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/7.png" alt="预览图"></p>]]></content>
       
       
       <categories>
@@ -259,7 +290,7 @@
       <link href="/archives/11728864.html"/>
       <url>/archives/11728864.html</url>
       
-        <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019<br>基础字体：字魂网<br>素材来源：包图网<br>内存总量：600MB<br>备份链接：链接：<a href="https://pan.baidu.com/s/1PLJAU_hKHI_mfFAVK8_Oyg">https://pan.baidu.com/s/1PLJAU_hKHI_mfFAVK8_Oyg</a><br>[login]提取码：5vdl [&#x2F;login]<br>预览 <img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/%E4%B8%89%E9%95%BF%E8%AE%AD%E7%BB%83%E8%90%A5%20%E7%94%B5%E8%A7%86%E5%B1%8F%20100x56.jpg" alt="预览图"></p>]]></content>
+        <content type="html"><![CDATA[<p>软件使用：Adobe Photoshop CC 2019<br>基础字体：字魂网<br>素材来源：包图网<br>内存总量：600MB<br>备份链接：链接：<a href="https://pan.baidu.com/s/1PLJAU_hKHI_mfFAVK8_Oyg">https://pan.baidu.com/s/1PLJAU_hKHI_mfFAVK8_Oyg</a> </p><p>预览 <img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/%E4%B8%89%E9%95%BF%E8%AE%AD%E7%BB%83%E8%90%A5%20%E7%94%B5%E8%A7%86%E5%B1%8F%20100x56.jpg" alt="预览图"></p>]]></content>
       
       
       <categories>
@@ -288,7 +319,7 @@
       <link href="/archives/6bb180e7.html"/>
       <url>/archives/6bb180e7.html</url>
       
-        <content type="html"><![CDATA[<h1 id="感言"><a href="#感言" class="headerlink" title="感言"></a>感言</h1><p>关于这次比赛，让我对ps有了更加深刻的了解。</p><h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>软件使用：Adobe Photoshop CC 2019 Adobe Illustrator 2019<br>素材来源：千库网  包图网<br>内存总量：300MB<br>团队成员： 李烘光    高震铄   田志宇<br>所获奖项: 二等奖<br>证书编号：JSJDS202100462021041482000276807771<br>查询地址：<a href="https://2021.jsjds.com.cn/Index/main/certification-verification">https://2021.jsjds.com.cn/Index/main/certification-verification</a><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/qq_pic_merged_1635001077841.jpg" alt="证书"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/2021091617060939698.jpg" alt="证书"><br>备份链接：链接：<a href="https://pan.baidu.com/s/1K5ZadHp19rkpTZR3AXZ--A">https://pan.baidu.com/s/1K5ZadHp19rkpTZR3AXZ--A</a><br>[login]提取码：nytv  [&#x2F;login]</p><p>以下为预览图<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/0.png" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/1.jpg" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/2.jpg" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/3.jpg" alt="预览"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="感言"><a href="#感言" class="headerlink" title="感言"></a>感言</h1><p>关于这次比赛，让我对ps有了更加深刻的了解。</p><h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>软件使用：Adobe Photoshop CC 2019 Adobe Illustrator 2019<br>素材来源：千库网  包图网<br>内存总量：300MB<br>团队成员： 李烘光    高震铄   田志宇<br>所获奖项: 二等奖<br>证书编号：JSJDS202100462021041482000276807771<br>查询地址：<a href="https://2021.jsjds.com.cn/Index/main/certification-verification">https://2021.jsjds.com.cn/Index/main/certification-verification</a><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/qq_pic_merged_1635001077841.jpg" alt="证书"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/2021091617060939698.jpg" alt="证书"><br>备份链接：链接：<a href="https://pan.baidu.com/s/1K5ZadHp19rkpTZR3AXZ--A">https://pan.baidu.com/s/1K5ZadHp19rkpTZR3AXZ--A</a> </p><p>以下为预览图<br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/0.png" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/1.jpg" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/2.jpg" alt="预览"><br><img src="https://syb-1303019251.cos.ap-beijing.myqcloud.com/blog/2021.10.23/1/3.jpg" alt="预览"></p>]]></content>
       
       
       <categories>
